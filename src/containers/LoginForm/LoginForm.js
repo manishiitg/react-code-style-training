@@ -23,6 +23,9 @@ const LoginForm = () => {
     })
     return (
         <form>
+            <div className="md-3">
+                <h4>Login Form</h4>
+            </div>
             <div className="mb-3">
                 <InputWithLabel id="username" label="User Name" callback={
                     (val) => {
