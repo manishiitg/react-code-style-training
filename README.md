@@ -2,6 +2,8 @@
 
 The purpose of this repository is to provide training on the best code practices to use for our inhouse large scale reactjs apps.
 
+This part of a series to show case how to manage the coding style for inhouse our inhouse projects. This is specific for large projects which go on months and years. Over such a long period and large code base it becomes essential to have a proper style guide which is testable, easy to use and upgradable to latest tech stack.
+
 We are trying to solve issues like
 
 - Long term code maintanablity 
