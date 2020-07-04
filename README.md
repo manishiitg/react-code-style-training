@@ -33,3 +33,28 @@ The tech stack proposed
 - testing library (https://testing-library.com/)
 - typescript (prop types)
 - saas
+
+
+ ### CSS
+
+ - styled components for highly reusabled components
+ - css/sass using css modules for general layouts using class names
+ - incase libraries like bootstrap or 3rd party libraries are used use classname like for grid etc.
+
+
+ ### Layout/Pages
+ - create HOC for layouts. so that app only have few specific layouts
+ - create pages/ folder every page managed via a route
+ - create containers/ for redux connected
+ - create components and publish to story book
+ - publish ui only components to bit.dev and story book
+
+--- pages
+    --- layouts
+        ---- multiple containers        
+            --- multiple components
+                --- custom hooks
+                --- ui components
+
+### Testing
+write tests across the board only integration tests
