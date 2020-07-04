@@ -9,6 +9,8 @@ import { ThemeProvider } from "styled-components";
 
 import theme from "./theme"
 
+import InputText, { InputWithLabel } from "./components/InputText/input"
+
 function App() {
   return (
     <ThemeProvider theme={theme}>
@@ -18,6 +20,12 @@ function App() {
 
           <Button>Normal Button</Button>
           <LargeButton>large Button</LargeButton>
+
+          <InputText id="email" />
+
+          <InputWithLabel id="email2" label="Email Address" />
+
+          <InputWithLabel id="email2" label="Email Address" help="Put in your email address" />
 
 
           <Button className="btn-primary">Primary bootstrap color</Button>
