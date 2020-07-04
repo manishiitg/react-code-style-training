@@ -4,21 +4,30 @@ import logo from './logo.svg';
 import Button, { LargeButton } from './components/Button/button';
 import List from "./components/List/list"
 
+import LayoutWith2Column from "./layout/2column-layout";
+
 function App() {
   return (
     <div className="App">
-      <Button>Normal Button</Button>
-      <LargeButton>large Button</LargeButton>
 
-      <Button className="btn-primary">Primary bootstrap color</Button>
+      <LayoutWith2Column>
 
-      <br/>
-      <br/>
-      <br/>
+        <Button>Normal Button</Button>
+        <LargeButton>large Button</LargeButton>
 
-      <List list={["hello", "world", "list1", "list2"]}>
 
-      </List>
+        <Button className="btn-primary">Primary bootstrap color</Button>
+
+        <br />
+        <br />
+        <br />
+
+        <List list={["hello", "world", "list1", "list2"]}>
+
+        </List>
+
+      </LayoutWith2Column>
+
     </div>
   );
 }
