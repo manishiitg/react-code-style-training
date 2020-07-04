@@ -1,11 +1,8 @@
 import React from 'react'
 
+import Header from "./../components/Header/header"
+
 /** move then to components later on */
-const Header = () => {
-    return (
-        <div></div>
-    )
-}
 const Footer = () => {
     return (
         <div>

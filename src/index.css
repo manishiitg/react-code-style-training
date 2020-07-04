@@ -12,6 +12,6 @@ code {
     monospace;
 }
 
-list-border-color {
+.list-border-color {
   color: rgba(0,0,0,0.75);
 }

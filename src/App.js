@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 
 import Button, { LargeButton } from './components/Button/button';
 import List from "./components/List/list"
