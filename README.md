@@ -60,3 +60,18 @@ The tech stack proposed
 
 ### Testing
 write tests across the board only integration tests
+
+
+### Steps
+
+- Migrate to functional components
+- Create custom hooks if state gets complex i.e if state management takes more than 5 lines create custom hook and move to a seperate file
+- Migrate to using css modules and have global css only for global styles
+- Migrate to write test cases for all components
+- Add Storybook
+- Add more components to storybook, and to do that need to have more container components and component which have redux should be seperated from view
+- Write test cases for most components
+- Have layout components for different page layouts
+- Write test cases for pages/containers as well. this will automatically cover test cases for redux
+- All components to have propTypes mandatory
+- Optionally move components to bit.dev still exploring this option
