@@ -24,6 +24,7 @@ export const LargeButton = (props) => {
     )
 }
 
+
 export const BootstrapInfoButton = (props) => {
     return (
         <BootstrapButton {...props} />
