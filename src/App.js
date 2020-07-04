@@ -19,26 +19,27 @@ function App() {
       <div className="App">
 
         <LayoutWith2Column side_column_component={<LoginForm />}>
+          <>
+            <Button>Normal Button</Button>
+            <LargeButton onClick={ () => {}}>large Button</LargeButton>
 
-          <Button>Normal Button</Button>
-          <LargeButton>large Button</LargeButton>
+            <InputText id="email" />
 
-          <InputText id="email" />
+            <InputWithLabel id="email2" label="Email Address" />
 
-          <InputWithLabel id="email2" label="Email Address" />
-
-          <InputWithLabel id="email2" label="Email Address" help="Put in your email address" />
+            <InputWithLabel id="email2" label="Email Address" help="Put in your email address" />
 
 
-          <Button className="btn-primary">Primary bootstrap color</Button>
+            <Button className="btn-primary">Primary bootstrap color</Button>
 
-          <br />
-          <br />
-          <br />
+            <br />
+            <br />
+            <br />
 
-          <List list={["hello", "world", "list1", "list2"]}>
+            <List list={["hello", "world", "list1", "list2"]}>
 
-          </List>
+            </List>
+          </>
 
         </LayoutWith2Column>
 

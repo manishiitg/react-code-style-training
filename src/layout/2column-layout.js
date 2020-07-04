@@ -1,6 +1,6 @@
 import React from 'react'
 
-import propTypes from "prop-types"
+import PropTypes from "prop-types"
 
 import Header from "./../components/Header/header"
 
@@ -40,8 +40,9 @@ const LayoutWith2Column = (props) => {
 }
 
 LayoutWith2Column.propTypes = {
-    side_column_component: propTypes.element,
-    children: propTypes.arrayOf(propTypes.element).isRequired
+    side_column_component: PropTypes.element,
+    children: PropTypes.oneOfType([PropTypes.element.isRequired, PropTypes.array.isRequired, PropTypes.string.isRequired ])
 }
+
 
 export default LayoutWith2Column

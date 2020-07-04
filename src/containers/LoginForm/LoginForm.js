@@ -22,7 +22,7 @@ const LoginForm = () => {
         "dropdown": 0
     })
     return (
-        <form>
+        <form data-testid="loginform">
             <div className="md-3">
                 <h4>Login Form</h4>
             </div>

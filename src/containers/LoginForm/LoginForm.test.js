@@ -5,7 +5,6 @@ import '@testing-library/jest-dom'
 import userEvent from '@testing-library/user-event'
 
 import LoginForm from "./LoginForm"
-import { element } from 'prop-types'
 
 test("login form to render", () => {
     const { container, getByText } = render(<LoginForm />)
