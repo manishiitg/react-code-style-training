@@ -11,12 +11,14 @@ import theme from "./theme"
 
 import InputText, { InputWithLabel } from "./components/InputText/input"
 
+import LoginForm from "./containers/LoginForm/LoginForm"
+
 function App() {
   return (
     <ThemeProvider theme={theme}>
       <div className="App">
 
-        <LayoutWith2Column>
+        <LayoutWith2Column side_column_component={<LoginForm />}>
 
           <Button>Normal Button</Button>
           <LargeButton>large Button</LargeButton>

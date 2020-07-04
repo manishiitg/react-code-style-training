@@ -7,7 +7,7 @@ import styles from "./input.module.scss"
 const InputText = ({ id, ...props }) => {
     const [value, setValue] = useState("")
     return (
-        <input type="text" id={id} className="form-control" value={value} onChange={
+        <input type={props.type} id={id} className="form-control" value={value} onChange={
             (evt) => {
                 setValue(evt.target.value)
                 if ("callback" in props) {
@@ -18,9 +18,15 @@ const InputText = ({ id, ...props }) => {
     )
 }
 
+InputText.defaultProps = {
+    type: "text"
+}
+
+
 InputText.propTypes = {
     id: PropTypes.string.isRequired,
-    callback: PropTypes.func
+    callback: PropTypes.func,
+    type: PropTypes.string.isRequired
 }
 
 export const InputWithLabel = ({ id, label, ...otherProps }) => {
@@ -35,6 +41,10 @@ export const InputWithLabel = ({ id, label, ...otherProps }) => {
             {helpText}
         </>
     )
+}
+
+InputWithLabel.defaultProps = {
+    ...InputText.defaultProps
 }
 
 InputWithLabel.propTypes = {
