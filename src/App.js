@@ -5,29 +5,35 @@ import List from "./components/List/list"
 
 import LayoutWith2Column from "./layout/2column-layout";
 
+import { ThemeProvider } from "styled-components";
+
+import theme from "./theme"
+
 function App() {
   return (
-    <div className="App">
+    <ThemeProvider theme={theme}>
+      <div className="App">
 
-      <LayoutWith2Column>
+        <LayoutWith2Column>
 
-        <Button>Normal Button</Button>
-        <LargeButton>large Button</LargeButton>
+          <Button>Normal Button</Button>
+          <LargeButton>large Button</LargeButton>
 
 
-        <Button className="btn-primary">Primary bootstrap color</Button>
+          <Button className="btn-primary">Primary bootstrap color</Button>
 
-        <br />
-        <br />
-        <br />
+          <br />
+          <br />
+          <br />
 
-        <List list={["hello", "world", "list1", "list2"]}>
+          <List list={["hello", "world", "list1", "list2"]}>
 
-        </List>
+          </List>
 
-      </LayoutWith2Column>
+        </LayoutWith2Column>
 
-    </div>
+      </div>
+    </ThemeProvider>
   );
 }
 

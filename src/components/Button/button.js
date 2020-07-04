@@ -8,6 +8,7 @@ const ButtonStyle = styled.button.attrs(props => ({
 }))`
    font-size: ${props => props.size};
    text-align: center;
+   color: ${props => props.theme.primaryColor}
 `;
 
 const Button = (props) => {
