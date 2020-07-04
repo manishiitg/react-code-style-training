@@ -1,5 +1,7 @@
 import React, { useState } from "react"
 
+import PropTypes from 'prop-types';
+
 import styles from "./input.module.scss"
 
 const InputText = ({ id, ...props }) => {
@@ -16,6 +18,11 @@ const InputText = ({ id, ...props }) => {
     )
 }
 
+InputText.propTypes = {
+    id: PropTypes.string.isRequired,
+    callback: PropTypes.func
+}
+
 export const InputWithLabel = ({ id, label, ...otherProps }) => {
     let helpText = null
     if ("help" in otherProps) {
@@ -23,11 +30,18 @@ export const InputWithLabel = ({ id, label, ...otherProps }) => {
     }
     return (
         <>
-            <label for={id} className="form-label">{label}</label>
-            <InputText {...otherProps} />
+            <label htmlFor={id} className="form-label">{label}</label>
+            <InputText id={id} {...otherProps} />
             {helpText}
         </>
     )
+}
+
+InputWithLabel.propTypes = {
+    ...InputText.propTypes,
+    label: PropTypes.string.isRequired,
+    helpText: PropTypes.string,
+
 }
 
 export default InputText
