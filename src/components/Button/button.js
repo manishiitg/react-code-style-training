@@ -1,7 +1,9 @@
 import React from "react"
 import styled from "styled-components"
 
-import {Button as BootstrapButton} from 'bootstrap'
+// import { Button as BootstrapButton } from 'bootstrap'
+
+import PropTypes from "prop-types"
 
 const ButtonStyle = styled.button.attrs(props => ({
     size: props.size || "1em"
@@ -13,9 +15,21 @@ const ButtonStyle = styled.button.attrs(props => ({
 
 const Button = (props) => {
     return (
-        <ButtonStyle {...props} className={"btn " + (props.className || "")}  onClick={props.onClick} value={props.chidren} />
+        <ButtonStyle {...props} className={"btn " + (props.className || "")} onClick={props.onClick} value={props.chidren} />
     )
 }
+
+Button.defaultProps = {
+    onClick: () => { }
+}
+
+Button.propTypes = {
+    onClick: PropTypes.func.isRequired,
+    className: PropTypes.string,
+    children: PropTypes.string.isRequired
+}
+
+
 
 export default Button
 
@@ -25,9 +39,13 @@ export const LargeButton = (props) => {
     )
 }
 
-
-export const BootstrapInfoButton = (props) => {
-    return (
-        <BootstrapButton {...props} />
-    )
+LargeButton.propTypes = {
+    ...Button.propTypes
 }
+
+
+// export const BootstrapInfoButton = (props) => {
+//     return (
+//         <BootstrapButton {...props} />
+//     )
+// }
