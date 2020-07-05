@@ -38,7 +38,7 @@ export const callUserListApi = () => {
             .then((data) => {
                 data.json().then((value) => {
                     console.log(value)
-                    dispatch(apiSuccessAction(value))
+                    dispatch(apiSuccessAction(value.data))
                 })
             }).catch((err) => {
                 dispatch(apiErrorAction(err))

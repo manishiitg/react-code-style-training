@@ -2,13 +2,13 @@ import { USER_LIST_ACTIONS } from "../actions/userlist"
 
 const reducer = (data = {
     "loading": false,
-    "data": {},
+    "data": [],
     "errormsg": ""
 }, action) => {
     if (action.type === USER_LIST_ACTIONS.USER_API_LOADING) {
         return {
             "loading": true,
-            "data": {},
+            "data": [],
             "errormsg": ""
         }
     } else if (action.type === USER_LIST_ACTIONS.USER_API_ERROR) {
