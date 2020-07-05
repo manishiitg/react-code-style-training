@@ -71,10 +71,7 @@ const apiresponse = {
 }
 
 const server = setupServer(
-    // rest.get('/api/users*', (req, res, ctx) => {
-    // for some reason i am getting this error https://github.com/mswjs/msw/issues/263 
-    // so for now, i am just writing * here. but that is wrong. 
-    rest.get('*', (req, res, ctx) => {
+    rest.get('https://reqres.in/api/users', (req, res, ctx) => {
 
         return res(
             // ctx.delay(1000), optional. don't use unless its requried to delay the api. as it slows down test
@@ -125,7 +122,7 @@ test("userlist click calls api and shows loading", async () => {
 test("userlist click calls api shows error message properly", async () => {
 
     server.use(
-        rest.get('*', (req, res, ctx) => {
+        rest.get('*/api/users', (req, res, ctx) => {
             return res(ctx.status(500), ctx.json("error simulated"))
         })
     )
