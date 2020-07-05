@@ -60,22 +60,21 @@ this repository will have sample codes which i have tried/tested on
 
 Documentation of component
 
-https://github.com/excellencetechnologies/HR-v2.0/blob/master/docs/components.md
+https://github.com/manishiitg/react-code-style-training/blob/master/docs/components.md
 
 Creating layout components
 
-https://github.com/excellencetechnologies/HR-v2.0/blob/master/docs/layoutcomponents.md
-
+https://github.com/manishiitg/react-code-style-training/blob/master/docs/layoutcomponents.md
 
 Adding storybook for all component and decoupling components
 
-https://github.com/excellencetechnologies/HR-v2.0/blob/master/docs/storybook.md
+https://github.com/manishiitg/react-code-style-training/blob/master/docs/storybook.md
 
 Styling
 
-https://github.com/excellencetechnologies/HR-v2.0/blob/master/docs/styling.md
+https://github.com/manishiitg/react-code-style-training/blob/master/docs/styling.md
 
 Testing Testing Testing 
 
-https://github.com/excellencetechnologies/HR-v2.0/blob/master/docs/testing.md
+https://github.com/manishiitg/react-code-style-training/blob/master/docs/testing.md
 
