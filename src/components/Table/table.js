@@ -25,7 +25,7 @@ const Table = ({ id, columns, rows }) => {
                             <tr key={id + "--" + idx}>
                                 {Object.keys(ele).map((innerKey, innerIdx) => {
                                     return (
-                                        <th key={id + "---" + innerIdx} scope="row">{ele[innerKey]}</th>
+                                        <td key={id + "---" + innerIdx} scope="row">{ele[innerKey]}</td>
                                     )
                                 })}
                             </tr>
