@@ -36,9 +36,12 @@ export const callUserListApi = () => {
         dispatch(apiLoadingAction())
         fetch("https://reqres.in/api/users?page=1")
             .then((data) => {
-                data.json().then((value) => {
-                    console.log(value)
-                    dispatch(apiSuccessAction(value.data))
+                return data.json().then((value) => {
+                    if(value.hasOwnProperty("data")){
+                        dispatch(apiSuccessAction(value.data))
+                    }else{
+                        throw value
+                    }
                 })
             }).catch((err) => {
                 dispatch(apiErrorAction(err))

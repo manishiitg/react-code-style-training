@@ -14,7 +14,7 @@ const reducer = (data = {
     } else if (action.type === USER_LIST_ACTIONS.USER_API_ERROR) {
         return Object.assign({}, {
             "loading": false,
-            "data": {},
+            "data": [],
             "errormsg": action.payload
         })
     } else if (action.type === USER_LIST_ACTIONS.USER_API_SUCCESS) {
