@@ -88,6 +88,13 @@ https://github.com/storybookjs/storybook/tree/master/addons/actions
 
 https://github.com/storybookjs/storybook/tree/master/addons/links
 
+https://github.com/storybookjs/storybook/tree/master/addons/viewport
+
+https://github.com/storybookjs/storybook/tree/master/addons/knobs
+
+https://github.com/storybookjs/storybook-addon-console
+
+
 both are very simple to understand.
 
 
