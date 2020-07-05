@@ -69,8 +69,8 @@ write tests across the board only integration tests
 - Migrate to using css modules and have global css only for global styles
 - Migrate to write test cases for all components
 - Add Storybook
-- Add more components to storybook, and to do that need to have more container components and component which have redux should be seperated from view
-- Write test cases for most components
+- Add more components to storybook, and to do that need to have more container components and component which have redux should be seperated from view 
+- Write test cases for all components
 - Have layout components for different page layouts
 - Write test cases for pages/containers as well. this will automatically cover test cases for redux
 - All components to have propTypes mandatory
