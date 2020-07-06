@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 import styles from "./input.module.scss"
 
-const InputText = ({ id, ...props }) => {
+const InputText = ({ id, ...props }) => {   
     const [value, setValue] = useState("")
     return (
         <input type={props.type} id={id} className="form-control" value={value} onChange={
