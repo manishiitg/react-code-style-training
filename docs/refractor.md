@@ -78,3 +78,8 @@ Testing Testing Testing
 
 https://github.com/manishiitg/react-code-style-training/blob/master/docs/testing.md
 
+Only how to test full component with api/redux calls see this PR to understand the code. and also read the PR description to understand it.
+
+https://github.com/manishiitg/react-code-style-training/pull/1
+
+
