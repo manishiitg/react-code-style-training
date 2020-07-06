@@ -2,7 +2,7 @@ import React, { useState } from "react"
 
 import PropTypes from 'prop-types';
 
-import styles from "./input.module.scss"
+// import styles from "./input.module.scss"
 
 const InputText = ({ id, ...props }) => {   
     const [value, setValue] = useState("")

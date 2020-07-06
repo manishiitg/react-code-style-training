@@ -7,10 +7,10 @@ const Header = () => {
     return (
         <nav className="navbar navbar-light bg-light">
             <div className="container-fluid">
-                <a className="navbar-brand" href="#">
+                <span className="navbar-brand">
                     <img src={logo} width="100" height="auto" alt="" loading="lazy" />
                     <span className={styles["header-text"]}>Style Guide React</span>
-                </a>
+                </span>
             </div>
         </nav>
     )
