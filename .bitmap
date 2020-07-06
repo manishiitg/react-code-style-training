@@ -29,5 +29,86 @@
         "origin": "AUTHORED",
         "exported": true
     },
+    "manishiitg.reusable-training/table@0.0.1": {
+        "files": [
+            {
+                "relativePath": "src/components/Table/index.js",
+                "test": false,
+                "name": "index.js"
+            },
+            {
+                "relativePath": "src/components/Table/table.js",
+                "test": false,
+                "name": "table.js"
+            },
+            {
+                "relativePath": "src/components/Table/table.stories.js",
+                "test": false,
+                "name": "table.stories.js"
+            },
+            {
+                "relativePath": "src/components/Table/table.test.js",
+                "test": true,
+                "name": "table.test.js"
+            }
+        ],
+        "mainFile": "src/components/Table/index.js",
+        "trackDir": "src/components/Table",
+        "origin": "AUTHORED",
+        "exported": true
+    },
+    "redux": {
+        "files": [
+            {
+                "relativePath": "src/redux/actions/userlist.js",
+                "test": false,
+                "name": "userlist.js"
+            },
+            {
+                "relativePath": "src/redux/reducer/userlist.js",
+                "test": false,
+                "name": "userlist.js"
+            },
+            {
+                "relativePath": "src/redux/store.js",
+                "test": false,
+                "name": "store.js"
+            }
+        ],
+        "mainFile": "src/redux/store.js",
+        "trackDir": "src/redux",
+        "origin": "AUTHORED",
+        "exported": false
+    },
+    "test-util": {
+        "files": [
+            {
+                "relativePath": "src/test-util.js",
+                "test": false,
+                "name": "test-util.js"
+            }
+        ],
+        "mainFile": "src/test-util.js",
+        "origin": "AUTHORED",
+        "exported": false
+    },
+    "user-list": {
+        "files": [
+            {
+                "relativePath": "src/containers/UserList/userlist.js",
+                "test": false,
+                "name": "userlist.js"
+            },
+            {
+                "relativePath": "src/containers/UserList/userlist.test.js",
+                "test": true,
+                "name": "userlist.test.js"
+            }
+        ],
+        "mainFile": "src/containers/UserList/userlist.js",
+        "trackDir": "src/containers/UserList",
+        "origin": "AUTHORED",
+        "exported": false
+    },
     "version": "14.8.6"
 }

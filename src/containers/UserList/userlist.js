@@ -6,7 +6,7 @@ import { callUserListApi } from "./../../redux/actions/userlist"
 
 import PropTypes from "prop-types"
 
-import Table from "../../components/Table/table"
+import Table from "@bit/manishiitg.reusable-training.table"
 import Button from "../../components/Button/button"
 
 const UserList = ({ userlist, callApi }) => {
