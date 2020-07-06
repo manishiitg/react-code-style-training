@@ -5,7 +5,7 @@ import '@testing-library/jest-dom/extend-expect';
 import '@testing-library/jest-dom'
 import userEvent from '@testing-library/user-event'
 
-import Button, { LargeButton } from "@bit/manishiitg.reusable-training.button"
+import Button, { LargeButton } from "./button"
 
 test('button renders properly', () => {
 
