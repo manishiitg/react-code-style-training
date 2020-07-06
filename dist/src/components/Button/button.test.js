@@ -12,7 +12,7 @@ require("@testing-library/jest-dom");
 
 var _userEvent = _interopRequireDefault(require("@testing-library/user-event"));
 
-var _manishiitgReusableTraining = _interopRequireWildcard(require("@bit/manishiitg.reusable-training.button"));
+var _manishiitgMediumBlog = _interopRequireWildcard(require("@bit/manishiitg.medium-blog.button"));
 
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function _getRequireWildcardCache() { return cache; }; return cache; }
 
@@ -23,7 +23,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 test('button renders properly', function () {
   var mockClick = jest.fn();
 
-  var button = /*#__PURE__*/_react.default.createElement(_manishiitgReusableTraining.default, {
+  var button = /*#__PURE__*/_react.default.createElement(_manishiitgMediumBlog.default, {
     onClick: mockClick
   }, "Test Button");
 
@@ -40,7 +40,7 @@ test('button renders properly', function () {
 test("large button", function () {
   var mockClick = jest.fn();
 
-  var largebutton = /*#__PURE__*/_react.default.createElement(_manishiitgReusableTraining.LargeButton, {
+  var largebutton = /*#__PURE__*/_react.default.createElement(_manishiitgMediumBlog.LargeButton, {
     onClick: mockClick
   }, "Test Button");
 

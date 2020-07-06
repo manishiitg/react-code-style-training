@@ -1,8 +1,6 @@
 import React from "react"
 import styled from "styled-components"
 
-// import { Button as BootstrapButton } from 'bootstrap'
-
 import PropTypes from "prop-types"
 
 const ButtonStyle = styled.button.attrs(props => ({

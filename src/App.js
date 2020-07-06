@@ -13,6 +13,8 @@ import InputText, { InputWithLabel } from "./components/InputText/input"
 
 import LoginForm from "./containers/LoginForm/LoginForm"
 
+import Title from "./components/Title/title"
+
 function App() {
   return (
     <ThemeProvider theme={theme}>
@@ -20,6 +22,8 @@ function App() {
 
         <LayoutWith2Column side_column_component={<LoginForm />}>
           <>
+
+            <Title>Just Learning</Title>
             <Button>Normal Button</Button>
             <LargeButton onClick={ () => {}}>large Button</LargeButton>
 
