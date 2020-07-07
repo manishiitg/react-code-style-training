@@ -113,5 +113,5 @@ export default InputText
 This component is basically an input with label i.e it's an variation of the same component with different html. so we are exporting it seperatly. 
 
 
-** Rule 5**
+**Rule 5**
 always define propsTypes for a component
