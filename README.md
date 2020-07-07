@@ -66,6 +66,7 @@ write tests across the board only integration tests
 
 - Migrate to functional components
 - Create custom hooks if state gets complex i.e if state management takes more than 5 lines create custom hook and move to a seperate file
+- If a component has variables like small changes in color, font size, etc i.e "small" variable. It should be managed via css in the same component folder. You can create a new component for it but, there should be a base component and all varitions extend that. If variations are big, then create a new folder and new component.
 - Migrate to using css modules and have global css only for global styles
 - Migrate to write test cases for all components
 - Add Storybook
