@@ -4,6 +4,9 @@ We will be using storybook to be able to easily view our component.
 
 Now there is an very important distinction here.
 
+**Rule0**
+story of a component should be in the same folder as the component itself.
+and storybook should should all different varities of the component
 
 **Rule1**
 
